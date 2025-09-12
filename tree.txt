@@ -1,0 +1,724 @@
+.
+├── _config.yml
+├── _data
+│   ├── authors.yml
+│   ├── comments
+│   │   ├── layout-comments
+│   │   │   ├── comment-1470944006665.yml
+│   │   │   └── comment-1470944162041.yml
+│   │   ├── markup-syntax-highlighting
+│   │   │   └── comment-1470969665387.yml
+│   │   └── welcome-to-jekyll
+│   │       ├── comment-1470942205700.yml
+│   │       ├── comment-1470942247755.yml
+│   │       ├── comment-1470942265819.yml
+│   │       └── comment-1470942493518.yml
+│   ├── cv.json
+│   ├── navigation.yml
+│   └── ui-text.yml
+├── _drafts
+│   └── post-draft.md
+├── _includes
+│   ├── analytics-providers
+│   │   ├── custom.html
+│   │   ├── google-analytics-4.html
+│   │   ├── google-universal.html
+│   │   └── google.html
+│   ├── analytics.html
+│   ├── archive-single-cv.html
+│   ├── archive-single-talk-cv.html
+│   ├── archive-single-talk.html
+│   ├── archive-single.html
+│   ├── author-profile.html
+│   ├── base_path
+│   ├── breadcrumbs.html
+│   ├── browser-upgrade.html
+│   ├── category-list.html
+│   ├── comment.html
+│   ├── comments-providers
+│   │   ├── custom.html
+│   │   ├── discourse.html
+│   │   ├── disqus.html
+│   │   ├── facebook.html
+│   │   ├── google-plus.html
+│   │   ├── scripts.html
+│   │   └── staticman.html
+│   ├── comments.html
+│   ├── cv-template.html
+│   ├── feature_row
+│   ├── footer
+│   │   └── custom.html
+│   ├── footer.html
+│   ├── gallery
+│   ├── group-by-array
+│   ├── head
+│   │   └── custom.html
+│   ├── head.html
+│   ├── masthead.html
+│   ├── nav_list
+│   ├── page__hero.html
+│   ├── page__taxonomy.html
+│   ├── paginator.html
+│   ├── post_pagination.html
+│   ├── read-time.html
+│   ├── scripts.html
+│   ├── seo.html
+│   ├── sidebar.html
+│   ├── social-share.html
+│   ├── tag-list.html
+│   └── toc
+├── _layouts
+│   ├── archive-taxonomy.html
+│   ├── archive.html
+│   ├── compress.html
+│   ├── cv-layout.html
+│   ├── default.html
+│   ├── home.html
+│   ├── single.html
+│   ├── splash.html
+│   └── talk.html
+├── _pages
+│   ├── 404.md
+│   ├── about.md
+│   ├── archive-layout-with-content.md
+│   ├── category-archive.html
+│   ├── collection-archive.html
+│   ├── cv-json.md
+│   ├── cv.md
+│   ├── markdown.md
+│   ├── non-menu-page.md
+│   ├── page-archive.html
+│   ├── portfolio.html
+│   ├── publications.html
+│   ├── sitemap.md
+│   ├── tag-archive.html
+│   ├── talkmap.html
+│   ├── talks.html
+│   ├── teaching.html
+│   ├── terms.md
+│   └── year-archive.html
+├── _portfolio
+│   ├── portfolio-1.md
+│   └── portfolio-2.html
+├── _posts
+│   ├── 2012-08-14-blog-post-1.md
+│   ├── 2013-08-14-blog-post-2.md
+│   ├── 2014-08-14-blog-post-3.md
+│   ├── 2015-08-14-blog-post-4.md
+│   └── 2199-01-01-future-post.md
+├── _publications
+│   ├── 2009-10-01-paper-title-number-1.md
+│   ├── 2010-10-01-paper-title-number-2.md
+│   ├── 2015-10-01-paper-title-number-3.md
+│   ├── 2024-02-17-paper-title-number-4.md
+│   └── 2025-06-08-paper-title-number-5.md
+├── _sass
+│   ├── _syntax.scss
+│   ├── _themes.scss
+│   ├── include
+│   │   ├── _mixins.scss
+│   │   └── _utilities.scss
+│   ├── layout
+│   │   ├── _archive.scss
+│   │   ├── _base.scss
+│   │   ├── _buttons.scss
+│   │   ├── _footer.scss
+│   │   ├── _forms.scss
+│   │   ├── _masthead.scss
+│   │   ├── _navigation.scss
+│   │   ├── _notices.scss
+│   │   ├── _page.scss
+│   │   ├── _reset.scss
+│   │   ├── _sidebar.scss
+│   │   └── _tables.scss
+│   ├── theme
+│   │   ├── _dark.scss
+│   │   └── _default.scss
+│   └── vendor
+│       ├── breakpoint
+│       │   ├── _breakpoint.scss
+│       │   ├── _context.scss
+│       │   ├── _helpers.scss
+│       │   ├── _legacy-settings.scss
+│       │   ├── _no-query.scss
+│       │   ├── _parsers.scss
+│       │   ├── _respond-to.scss
+│       │   ├── _settings.scss
+│       │   └── parsers
+│       │       ├── _double.scss
+│       │       ├── _query.scss
+│       │       ├── _resolution.scss
+│       │       ├── _single.scss
+│       │       ├── _triple.scss
+│       │       ├── double
+│       │       │   ├── _default-pair.scss
+│       │       │   ├── _default.scss
+│       │       │   └── _double-string.scss
+│       │       ├── resolution
+│       │       │   └── _resolution.scss
+│       │       ├── single
+│       │       │   └── _default.scss
+│       │       └── triple
+│       │           └── _default.scss
+│       ├── font-awesome
+│       │   ├── _animated.scss
+│       │   ├── _bordered-pulled.scss
+│       │   ├── _core.scss
+│       │   ├── _fixed-width.scss
+│       │   ├── _functions.scss
+│       │   ├── _icons.scss
+│       │   ├── _list.scss
+│       │   ├── _mixins.scss
+│       │   ├── _rotated-flipped.scss
+│       │   ├── _screen-reader.scss
+│       │   ├── _shims.scss
+│       │   ├── _sizing.scss
+│       │   ├── _stacked.scss
+│       │   ├── _variables.scss
+│       │   ├── brands.scss
+│       │   ├── fontawesome.scss
+│       │   ├── regular.scss
+│       │   ├── solid.scss
+│       │   └── v4-shims.scss
+│       ├── magnific-popup
+│       │   ├── _magnific-popup.scss
+│       │   └── _settings.scss
+│       └── susy
+│           ├── _su.scss
+│           ├── _susy.scss
+│           ├── _susyone.scss
+│           └── susy
+│               ├── _su.scss
+│               ├── language
+│               │   ├── _susy.scss
+│               │   ├── _susyone.scss
+│               │   ├── susy
+│               │   │   ├── _background.scss
+│               │   │   ├── _bleed.scss
+│               │   │   ├── _box-sizing.scss
+│               │   │   ├── _breakpoint-plugin.scss
+│               │   │   ├── _container.scss
+│               │   │   ├── _context.scss
+│               │   │   ├── _gallery.scss
+│               │   │   ├── _grids.scss
+│               │   │   ├── _gutters.scss
+│               │   │   ├── _isolate.scss
+│               │   │   ├── _margins.scss
+│               │   │   ├── _padding.scss
+│               │   │   ├── _rows.scss
+│               │   │   ├── _settings.scss
+│               │   │   ├── _span.scss
+│               │   │   └── _validation.scss
+│               │   └── susyone
+│               │       ├── _background.scss
+│               │       ├── _functions.scss
+│               │       ├── _grid.scss
+│               │       ├── _isolation.scss
+│               │       ├── _margin.scss
+│               │       ├── _media.scss
+│               │       ├── _padding.scss
+│               │       └── _settings.scss
+│               ├── output
+│               │   ├── _float.scss
+│               │   ├── _shared.scss
+│               │   ├── _support.scss
+│               │   ├── float
+│               │   │   ├── _container.scss
+│               │   │   ├── _end.scss
+│               │   │   ├── _isolate.scss
+│               │   │   └── _span.scss
+│               │   ├── shared
+│               │   │   ├── _background.scss
+│               │   │   ├── _container.scss
+│               │   │   ├── _direction.scss
+│               │   │   ├── _inspect.scss
+│               │   │   ├── _margins.scss
+│               │   │   ├── _output.scss
+│               │   │   └── _padding.scss
+│               │   └── support
+│               │       ├── _background.scss
+│               │       ├── _box-sizing.scss
+│               │       ├── _clearfix.scss
+│               │       ├── _prefix.scss
+│               │       ├── _rem.scss
+│               │       └── _support.scss
+│               └── su
+│                   ├── _grid.scss
+│                   ├── _settings.scss
+│                   ├── _utilities.scss
+│                   └── _validation.scss
+├── _site
+│   ├── 404.html
+│   ├── about
+│   │   └── index.html
+│   ├── about.html
+│   ├── archive-layout-with-content
+│   │   └── index.html
+│   ├── assets
+│   │   ├── css
+│   │   │   ├── academicons.css
+│   │   │   ├── academicons.min.css
+│   │   │   ├── collapse.css
+│   │   │   ├── cv-layout.css
+│   │   │   ├── cv-style.css
+│   │   │   └── main.css
+│   │   ├── fonts
+│   │   │   ├── academicons.eot
+│   │   │   ├── academicons.svg
+│   │   │   ├── academicons.ttf
+│   │   │   └── academicons.woff
+│   │   ├── js
+│   │   │   ├── collapse.js
+│   │   │   └── main.min.js
+│   │   └── webfonts
+│   │       ├── fa-brands-400.ttf
+│   │       ├── fa-brands-400.woff2
+│   │       ├── fa-regular-400.ttf
+│   │       ├── fa-regular-400.woff2
+│   │       ├── fa-solid-900.ttf
+│   │       ├── fa-solid-900.woff2
+│   │       ├── fa-v4compatibility.ttf
+│   │       └── fa-v4compatibility.woff2
+│   ├── categories
+│   │   └── index.html
+│   ├── collection-archive
+│   │   └── index.html
+│   ├── CONTRIBUTING.md
+│   ├── cv
+│   │   └── index.html
+│   ├── cv-json
+│   │   └── index.html
+│   ├── docker-compose.yaml
+│   ├── feed.xml
+│   ├── files
+│   │   ├── bibtex1.bib
+│   │   ├── paper1.pdf
+│   │   ├── paper2.pdf
+│   │   ├── paper3.pdf
+│   │   ├── slides1.pdf
+│   │   ├── slides2.pdf
+│   │   └── slides3.pdf
+│   ├── images
+│   │   ├── 3953273590_704e3899d5_m.jpg
+│   │   ├── 500x300.png
+│   │   ├── apple-touch-icon-180x180.png
+│   │   ├── bio-photo-2.jpg
+│   │   ├── bio-photo.jpg
+│   │   ├── editing-talk.png
+│   │   ├── favicon-192x192.png
+│   │   ├── favicon-32x32.png
+│   │   ├── favicon-512x512.png
+│   │   ├── favicon.ico
+│   │   ├── favicon.svg
+│   │   ├── foo-bar-identity-th.jpg
+│   │   ├── foo-bar-identity.jpg
+│   │   ├── homepage.png
+│   │   ├── image-alignment-1200x4002.jpg
+│   │   ├── image-alignment-150x150.jpg
+│   │   ├── image-alignment-300x200.jpg
+│   │   ├── image-alignment-580x300.jpg
+│   │   ├── manifest.json
+│   │   ├── paragraph-indent.png
+│   │   ├── paragraph-no-indent.png
+│   │   ├── profile.png
+│   │   ├── site-logo.png
+│   │   └── themes
+│   │       ├── homepage-dark.png
+│   │       └── homepage-light.png
+│   ├── index.html
+│   ├── markdown
+│   │   └── index.html
+│   ├── markdown_generator
+│   │   ├── OrcidToBib.ipynb
+│   │   ├── publications.ipynb
+│   │   ├── publications.py
+│   │   ├── publications.tsv
+│   │   ├── PubsFromBib.ipynb
+│   │   ├── pubsFromBib.py
+│   │   ├── readme.md
+│   │   ├── talks.ipynb
+│   │   ├── talks.py
+│   │   └── talks.tsv
+│   ├── markdown.html
+│   ├── md
+│   │   └── index.html
+│   ├── nmp
+│   │   └── index.html
+│   ├── nmp.html
+│   ├── non-menu-page
+│   │   └── index.html
+│   ├── page-archive
+│   │   └── index.html
+│   ├── portfolio
+│   │   ├── index.html
+│   │   ├── portfolio-1
+│   │   │   └── index.html
+│   │   └── portfolio-2
+│   │       └── index.html
+│   ├── posts
+│   │   ├── 2012
+│   │   │   └── 08
+│   │   │       ├── blog-post-1
+│   │   │       │   └── index.html
+│   │   │       └── blog-post-4
+│   │   │           └── index.html
+│   │   ├── 2013
+│   │   │   └── 08
+│   │   │       └── blog-post-2
+│   │   │           └── index.html
+│   │   └── 2014
+│   │       └── 08
+│   │           └── blog-post-3
+│   │               └── index.html
+│   ├── publication
+│   │   ├── 2009-10-01-paper-title-number-1.html
+│   │   ├── 2010-10-01-paper-title-number-2.html
+│   │   ├── 2015-10-01-paper-title-number-3.html
+│   │   └── 2024-02-17-paper-title-number-4.html
+│   ├── publications
+│   │   └── index.html
+│   ├── redirects.json
+│   ├── resume-json.html
+│   ├── resume.html
+│   ├── robots.txt
+│   ├── scripts
+│   │   ├── cv_markdown_to_json.py
+│   │   └── update_cv_json.sh
+│   ├── sitemap
+│   │   └── index.html
+│   ├── sitemap.xml
+│   ├── tags
+│   │   └── index.html
+│   ├── talkmap
+│   │   ├── leaflet_dist
+│   │   │   ├── leaflet.markercluster-src.js
+│   │   │   ├── leaflet.markercluster.js
+│   │   │   ├── MarkerCluster.css
+│   │   │   ├── MarkerCluster.Default.css
+│   │   │   └── screen.css
+│   │   ├── map.html
+│   │   └── org-locations.js
+│   ├── talkmap_out.ipynb
+│   ├── talkmap.html
+│   ├── talkmap.ipynb
+│   ├── talkmap.py
+│   ├── talks
+│   │   ├── 2012-03-01-talk-1.html
+│   │   ├── 2013-03-01-tutorial-1.html
+│   │   ├── 2014-02-01-talk-2.html
+│   │   ├── 2014-03-01-talk-3.html
+│   │   └── index.html
+│   ├── teaching
+│   │   ├── 2014-spring-teaching-1.html
+│   │   ├── 2015-spring-teaching-1.html
+│   │   └── index.html
+│   ├── terms
+│   │   └── index.html
+│   ├── wordpress
+│   │   └── blog-posts
+│   │       └── index.html
+│   └── year-archive
+│       └── index.html
+├── _talks
+│   ├── 2012-03-01-talk-1.md
+│   ├── 2013-03-01-tutorial-1.md
+│   ├── 2014-02-01-talk-2.md
+│   └── 2014-03-01-talk-3.md
+├── _teaching
+│   ├── 2014-spring-teaching-1.md
+│   └── 2015-spring-teaching-2.md
+├── .devcontainer
+│   └── devcontainer.json
+├── .DS_Store
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── master
+│   │       └── remotes
+│   │           ├── origin
+│   │           │   └── master
+│   │           └── upstream
+│   │               ├── #137
+│   │               ├── fix-teaching
+│   │               ├── HEAD
+│   │               ├── master
+│   │               └── read-more
+│   ├── objects
+│   │   ├── 3b
+│   │   │   └── 66c791c8a24304dc7e8e5d3e348bd901d01308
+│   │   ├── 9c
+│   │   │   └── 19ae487e7997fa451a849d3575707670c14208
+│   │   ├── e3
+│   │   │   └── 3f45bdf6e7a02fb2d2347920cd81a04645f90c
+│   │   ├── info
+│   │   └── pack
+│   │       ├── pack-f99875da44c2644239d3c80e11a87d399ec35d3a.idx
+│   │       ├── pack-f99875da44c2644239d3c80e11a87d399ec35d3a.pack
+│   │       └── pack-f99875da44c2644239d3c80e11a87d399ec35d3a.rev
+│   ├── packed-refs
+│   └── refs
+│       ├── heads
+│       │   └── master
+│       ├── remotes
+│       │   ├── origin
+│       │   │   └── master
+│       │   └── upstream
+│       │       ├── #137
+│       │       ├── fix-teaching
+│       │       ├── HEAD
+│       │       ├── master
+│       │       └── read-more
+│       └── tags
+├── .github
+│   ├── ISSUE_TEMPLATE
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   └── workflows
+│       └── scrape_talks.yml
+├── .gitignore
+├── .sass-cache
+│   ├── 07868d8060800397a5ca95394d73a75f2212ae29
+│   │   ├── _mixins.scssc
+│   │   └── _utilities.scssc
+│   ├── 1c48be6079d802268e62785c80aa9773a6b378f5
+│   │   ├── _animated.scssc
+│   │   ├── _bordered-pulled.scssc
+│   │   ├── _core.scssc
+│   │   ├── _fixed-width.scssc
+│   │   ├── _functions.scssc
+│   │   ├── _icons.scssc
+│   │   ├── _list.scssc
+│   │   ├── _mixins.scssc
+│   │   ├── _rotated-flipped.scssc
+│   │   ├── _screen-reader.scssc
+│   │   ├── _sizing.scssc
+│   │   ├── _stacked.scssc
+│   │   ├── _variables.scssc
+│   │   ├── brands.scssc
+│   │   ├── fontawesome.scssc
+│   │   └── solid.scssc
+│   ├── 1d3b45a30857aaffe216b41191e2e5258b45f643
+│   │   └── _default.scssc
+│   ├── 28aeb35927d1b515b7dffe7db1f6392baca4ea55
+│   │   ├── _syntax.scssc
+│   │   └── _themes.scssc
+│   ├── 368359fc4ba4fc38dc7f9e3c426a987d9ae9c7d6
+│   │   ├── _background.scssc
+│   │   ├── _container.scssc
+│   │   ├── _direction.scssc
+│   │   ├── _inspect.scssc
+│   │   ├── _margins.scssc
+│   │   ├── _output.scssc
+│   │   └── _padding.scssc
+│   ├── 3aff6f9f2d016431b13832a62b537cc9e6007ea9
+│   │   ├── _background.scssc
+│   │   ├── _bleed.scssc
+│   │   ├── _box-sizing.scssc
+│   │   ├── _breakpoint-plugin.scssc
+│   │   ├── _container.scssc
+│   │   ├── _context.scssc
+│   │   ├── _gallery.scssc
+│   │   ├── _grids.scssc
+│   │   ├── _gutters.scssc
+│   │   ├── _isolate.scssc
+│   │   ├── _margins.scssc
+│   │   ├── _padding.scssc
+│   │   ├── _rows.scssc
+│   │   ├── _settings.scssc
+│   │   ├── _span.scssc
+│   │   └── _validation.scssc
+│   ├── 455057898bb7f4a0a7c4a0e1ca72a5420b8b79be
+│   │   ├── _grid.scssc
+│   │   ├── _settings.scssc
+│   │   ├── _utilities.scssc
+│   │   └── _validation.scssc
+│   ├── 492cedae12ef673e079dd9518c474a622d738c6e
+│   │   ├── _magnific-popup.scssc
+│   │   └── _settings.scssc
+│   ├── 6ff12dfc3ada365dc313f617bfaf96c21b34eb34
+│   │   ├── _background.scssc
+│   │   ├── _box-sizing.scssc
+│   │   ├── _clearfix.scssc
+│   │   ├── _prefix.scssc
+│   │   ├── _rem.scssc
+│   │   └── _support.scssc
+│   ├── 706158406f0e34a6f0f2e4eb8ce50de148123d1c
+│   │   ├── _default-pair.scssc
+│   │   ├── _default.scssc
+│   │   └── _double-string.scssc
+│   ├── 70aa1953f77caa5db7148c9b926d644b7a576b37
+│   │   └── _susy.scssc
+│   ├── 7ec7bced61c39b0a2f52c14795c50eec91e1ec7c
+│   │   └── _default.scssc
+│   ├── 7f03b831e9372b756d0ed31d6bac95e7eee28efd
+│   │   ├── _dark.scssc
+│   │   └── _default.scssc
+│   ├── 8231beaddc691c86a5e2794fa59026e955507c4a
+│   │   └── _resolution.scssc
+│   ├── 97bcc0fc4fd14bed6626ed47bec5fb9d9b73b06b
+│   │   └── _susy.scssc
+│   ├── a04bde004916cf1fbb6172a381760bcdcc3764fe
+│   │   ├── _archive.scssc
+│   │   ├── _base.scssc
+│   │   ├── _buttons.scssc
+│   │   ├── _footer.scssc
+│   │   ├── _forms.scssc
+│   │   ├── _masthead.scssc
+│   │   ├── _navigation.scssc
+│   │   ├── _notices.scssc
+│   │   ├── _page.scssc
+│   │   ├── _reset.scssc
+│   │   ├── _sidebar.scssc
+│   │   └── _tables.scssc
+│   ├── ae2624bd150bb42ab89d81afc6ce90f139ed580d
+│   │   ├── _double.scssc
+│   │   ├── _query.scssc
+│   │   ├── _resolution.scssc
+│   │   ├── _single.scssc
+│   │   └── _triple.scssc
+│   ├── b42367d0665154d3800478f6d677862f680c8d82
+│   │   ├── _float.scssc
+│   │   ├── _shared.scssc
+│   │   └── _support.scssc
+│   ├── d41b766fa10ff54d8a6b0d1b23325671f04e3338
+│   │   └── _su.scssc
+│   ├── d73b8ba3c03859803b1dd80d948a6d2426e075bb
+│   │   ├── _breakpoint.scssc
+│   │   ├── _context.scssc
+│   │   ├── _helpers.scssc
+│   │   ├── _legacy-settings.scssc
+│   │   ├── _no-query.scssc
+│   │   ├── _parsers.scssc
+│   │   ├── _respond-to.scssc
+│   │   └── _settings.scssc
+│   └── fc76abe37642f6ae6cc5e38e4b8062ac0fb84095
+│       ├── _container.scssc
+│       ├── _end.scssc
+│       ├── _isolate.scssc
+│       └── _span.scssc
+├── assets
+│   ├── css
+│   │   ├── academicons.css
+│   │   ├── academicons.min.css
+│   │   ├── collapse.css
+│   │   ├── cv-layout.css
+│   │   ├── cv-style.css
+│   │   └── main.scss
+│   ├── fonts
+│   │   ├── academicons.eot
+│   │   ├── academicons.svg
+│   │   ├── academicons.ttf
+│   │   └── academicons.woff
+│   ├── js
+│   │   ├── _main.js
+│   │   ├── collapse.js
+│   │   ├── main.min.js
+│   │   └── plugins
+│   │       └── jquery.greedy-navigation.js
+│   └── webfonts
+│       ├── fa-brands-400.ttf
+│       ├── fa-brands-400.woff2
+│       ├── fa-regular-400.ttf
+│       ├── fa-regular-400.woff2
+│       ├── fa-solid-900.ttf
+│       ├── fa-solid-900.woff2
+│       ├── fa-v4compatibility.ttf
+│       └── fa-v4compatibility.woff2
+├── CONTRIBUTING.md
+├── docker-compose.yaml
+├── Dockerfile
+├── files
+│   ├── bibtex1.bib
+│   ├── paper1.pdf
+│   ├── paper2.pdf
+│   ├── paper3.pdf
+│   ├── slides1.pdf
+│   ├── slides2.pdf
+│   └── slides3.pdf
+├── Gemfile
+├── Gemfile.lock
+├── images
+│   ├── 3953273590_704e3899d5_m.jpg
+│   ├── 500x300.png
+│   ├── apple-touch-icon-180x180.png
+│   ├── bio-photo-2.jpg
+│   ├── bio-photo.jpg
+│   ├── editing-talk.png
+│   ├── favicon-192x192.png
+│   ├── favicon-32x32.png
+│   ├── favicon-512x512.png
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── foo-bar-identity-th.jpg
+│   ├── foo-bar-identity.jpg
+│   ├── homepage.png
+│   ├── image-alignment-1200x4002.jpg
+│   ├── image-alignment-150x150.jpg
+│   ├── image-alignment-300x200.jpg
+│   ├── image-alignment-580x300.jpg
+│   ├── manifest.json
+│   ├── paragraph-indent.png
+│   ├── paragraph-no-indent.png
+│   ├── profile.png
+│   ├── site-logo.png
+│   └── themes
+│       ├── homepage-dark.png
+│       └── homepage-light.png
+├── index.md
+├── LICENSE
+├── markdown_generator
+│   ├── OrcidToBib.ipynb
+│   ├── publications.ipynb
+│   ├── publications.py
+│   ├── publications.tsv
+│   ├── PubsFromBib.ipynb
+│   ├── pubsFromBib.py
+│   ├── readme.md
+│   ├── talks.ipynb
+│   ├── talks.py
+│   └── talks.tsv
+├── package.json
+├── README.md
+├── scripts
+│   ├── cv_markdown_to_json.py
+│   └── update_cv_json.sh
+├── talkmap
+│   ├── leaflet_dist
+│   │   ├── leaflet.markercluster-src.js
+│   │   ├── leaflet.markercluster.js
+│   │   ├── MarkerCluster.css
+│   │   ├── MarkerCluster.Default.css
+│   │   └── screen.css
+│   ├── map.html
+│   └── org-locations.js
+├── talkmap_out.ipynb
+├── talkmap.ipynb
+├── talkmap.py
+└── tree.txt
+
+150 directories, 572 files
